@@ -1,3 +1,66 @@
+/* Attendee list styles */
+.attendee-list-section {
+  margin-top: 30px;
+  text-align: left;
+}
+.attendee-list-section h4 {
+  font-size: 16px;
+  color: #475569;
+  margin-bottom: 10px;
+}
+.attendee-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.attendee-list li {
+  padding: 7px 0 7px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 15px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.attendee-list li:last-child {
+  border-bottom: none;
+}
+.attendee-list .team-badge {
+  font-size: 13px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  color: #fff;
+  margin-right: 6px;
+  display: inline-block;
+}
+.team-badge.water {
+  background: #00c7fd;
+}
+.team-badge.zero {
+  background: #7ed957;
+}
+.team-badge.power {
+  background: #ff6f61;
+}
+/* Confetti effect */
+.confetti {
+  position: fixed;
+  top: -20px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 0.85;
+  z-index: 9999;
+  pointer-events: none;
+  animation: confetti-fall 2s linear forwards;
+}
+
+@keyframes confetti-fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0.5;
+  }
+}
 /* Modern reset */
 * {
   margin: 0;
