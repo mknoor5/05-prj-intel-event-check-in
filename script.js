@@ -45,7 +45,7 @@ form.addEventListener("submit", function (event) {
   }
 
   // welcome message
-  const message = `HURRAH!! 🥳 Welcome ${name} from ${teamFullName}`;
+  const message = `HURRAHHH!! 🥳 Welcome ${name} from ${teamFullName}`;
   console.log(message);
   // show confetti
   showConfetti();
